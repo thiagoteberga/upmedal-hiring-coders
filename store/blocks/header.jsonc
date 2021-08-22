@@ -10,6 +10,10 @@
       "sticky-layout#desktop"
     ]
   },
+  //Adicionando a Funcionalidade do Carrinho
+  "header-row#1-desktop": {
+    "children": ["minicart.v2"]
+  },
   "sticky-layout#desktop": {
     "props": {
       "blockClass": "sticky-header"

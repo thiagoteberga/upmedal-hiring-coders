@@ -12,13 +12,13 @@ Criar a solução a partir de um [boiler template padrão da Vtex IO](https://gi
 - Utilizar o [Markdown](https://pt.wikipedia.org/wiki/Markdown) + o css para formatação.
 
 ## To Do List:
-- [ ] [Flex Layout](https://vtex.io/docs/components/all/vtex.flex-layout@0.17.0/) para criar as cores em css.
-- [ ] Dar prioridade as páginas criada nos arquivos.jsonc colocando comentários dos blocos criados
-- [ ] Utilizar o [Slider layout](https://vtex.io/docs/app/vtex.slider-layout) para mostrar os produtos em destaque.
-- [ ] Criar um componente [Tab Layout](https://vtex.io/docs/components/all/vtex.tab-layout@0.4.3/) para separar os produtos por categoria.
-- [ ] Criar um [bloco de lista de produtos](https://vtex.io/docs/app/vtex.product-list@0.31.0/) (Sugestão paginado por 8 itens da categoria).
-- [ ] Criar [Minicard](https://vtex.io/docs/components/content-blocks/vtex.minicart@2.60.0/) para lista dos produtos no carrinho.
-- [ ] Ao clicar no produto ir para tela com [Product Summary](https://vtex.io/docs/components/all/vtex.product-summary@2.53.0/).
+- [x] [Flex Layout](https://vtex.io/docs/components/all/vtex.flex-layout@0.17.0/) para criar as cores em css.
+- [x] Dar prioridade as páginas criada nos arquivos.jsonc colocando comentários dos blocos criados
+- [x] Utilizar o [Slider layout](https://vtex.io/docs/app/vtex.slider-layout) para mostrar os produtos em destaque.
+- [x] Criar um componente [Tab Layout](https://vtex.io/docs/components/all/vtex.tab-layout@0.4.3/) para separar os produtos por categoria.
+- [x] Criar um [bloco de lista de produtos](https://vtex.io/docs/app/vtex.product-list@0.31.0/) (Sugestão paginado por 8 itens da categoria).
+- [x] Criar [Minicard](https://vtex.io/docs/components/content-blocks/vtex.minicart@2.60.0/) para lista dos produtos no carrinho.
+- [x] Ao clicar no produto ir para tela com [Product Summary](https://vtex.io/docs/components/all/vtex.product-summary@2.53.0/).
 - [ ] Responsivo - Layout Mobile
 - [ ] Criar um componente customizado para falar com suporte no whatsapp, no rodapé [Utilizar o Vtex Componentes com React para criar o componente](https://vtex.io/docs/components/all/vtex.store-components@3.150.0/) - [API whatsapp](https://www.convertte.com.br/gerador-link-whatsapp/).
 - [ ] Criar um componente customizado para cadastrar leads (possíveis clientes prospectos), pegar o Nome, Email e Telefone. Este componente pode servir de isca digital, dando uma bonificação para o prospecto que preencher as informações da lead. [Utilizar o Vtex Componentes com React para criar o componente](https://vtex.io/docs/components/all/vtex.store-components@3.150.0/). Mais sugestões para ajudar no layout: [Um](https://vtex.io/docs/getting-started/desenvolva-componentes-usando-vtex-io-e-react/5) e [Dois](https://vtex.io/docs/components/all/vtex.stack-layout@0.1.0/).
