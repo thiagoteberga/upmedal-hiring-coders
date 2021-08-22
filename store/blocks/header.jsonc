@@ -27,7 +27,9 @@
     "children": [
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
+      "flex-layout.col#spacer", //Centralizar a Search Bar
       "search-bar",
+      "flex-layout.col#spacer", //Centralizar a Search Bar
       "locale-switcher",
       "minicart.v2"
     ]

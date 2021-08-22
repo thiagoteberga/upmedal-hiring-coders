@@ -1,11 +1,400 @@
 {
   "store.home": { 
     "blocks": [
-      "slider-layout#banner",
-      "rich-text"
+      "flex-layout.row#menu"
     ]
   },
 
+
+
+  //Linha do Menu - Fixada no CSS "vtex.tab-layout.css" - Responsavel pelas Abas
+  "flex-layout.row#menu": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "tab-layout#home"
+    ]
+  },
+
+  //Tab-Layout Principal
+  "tab-layout#home": {
+    "children": [
+      "tab-list#home",
+      "tab-content#home"
+    ],
+    "props": {
+      "blockClass": "home",
+      "defaultActiveTabId": "promocao"
+    }
+  },
+
+  //Tab List - Definicao Abas
+  "tab-list#home": {
+    "children": [
+      "tab-list.item#promocao",
+      "tab-list.item#corinthians",
+      "tab-list.item#palmeiras",
+      "tab-list.item#signos",
+      "tab-list.item#divertidos",
+      "tab-list.item#maravilhas",
+      "tab-list.item#guerreiros",
+      "tab-list.item#album1",
+      "tab-list.item#album2",
+      "tab-list.item#album3"
+    ]
+  },
+
+  //Tab List - Nome das Abas
+  "tab-list.item#promocao": {
+    "props": {
+      "tabId": "promocao",
+      "label": "PROMOÇÃO",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#corinthians": {
+    "props": {
+      "tabId": "corinthians",
+      "label": "CORINTHIANS"
+    }
+  },
+  "tab-list.item#palmeiras": {
+    "props": {
+      "tabId": "palmeiras",
+      "label": "PALMEIRAS"
+    }
+  },
+  "tab-list.item#signos": {
+    "props": {
+      "tabId": "signos",
+      "label": "SIGNOS"
+    }
+  },
+  "tab-list.item#divertidos": {
+    "props": {
+      "tabId": "divertidos",
+      "label": "DIVERTIDOS"
+    }
+  },
+  "tab-list.item#maravilhas": {
+    "props": {
+      "tabId": "maravilhas",
+      "label": "MARAVILHAS"
+    }
+  },
+  "tab-list.item#guerreiros": {
+    "props": {
+      "tabId": "guerreiros",
+      "label": "GUERREIROS"
+    }
+  },
+  "tab-list.item#album1": {
+    "props": {
+      "tabId": "album1",
+      "label": "ALBUM 1"
+    }
+  },
+  "tab-list.item#album2": {
+    "props": {
+      "tabId": "album2",
+      "label": "ALBUM 2"
+    }
+  },
+  "tab-list.item#album3": {
+    "props": {
+      "tabId": "album3",
+      "label": "ALBUM 3"
+    }
+  },
+
+  //Definicao do Conteudo das Abas
+  "tab-content#home": {
+    "children": [
+      "tab-content.item#promocao",
+      "tab-content.item#corinthians",
+      "tab-content.item#palmeiras",
+      "tab-content.item#signos",
+      "tab-content.item#divertidos",
+      "tab-content.item#maravilhas",
+      "tab-content.item#guerreiros",
+      "tab-content.item#album1",
+      "tab-content.item#album2",
+      "tab-content.item#album3"
+    ]
+  },
+
+  // Responsavel pro Definir o Conteudo que ira aparecer em cada Aba
+  "tab-content.item#promocao": {
+    "children": [
+      "slider-layout#banner",
+      "search-result-layout.customQuery#promocao"
+    ],
+    "props": {
+      "tabId": "promocao"
+    }
+  },
+  "tab-content.item#corinthians": {
+    "children": [
+      "slider-layout#banner",
+      "search-result-layout.customQuery#corinthians"
+    ],
+    "props": {
+      "tabId": "corinthians"
+    }
+  },
+  "tab-content.item#palmeiras": {
+    "children": [
+      "slider-layout#banner",
+      "search-result-layout.customQuery#palmeiras"
+    ],
+    "props": {
+      "tabId": "palmeiras"
+    }
+  },
+  "tab-content.item#signos": {
+    "children": [
+      "slider-layout#banner",
+      "search-result-layout.customQuery#signos"
+    ],
+    "props": {
+      "tabId": "signos"
+    }
+  },
+  "tab-content.item#divertidos": {
+    "children": [
+      "slider-layout#banner",
+      "search-result-layout.customQuery#divertidos"
+    ],
+    "props": {
+      "tabId": "divertidos"
+    }
+  },
+  "tab-content.item#maravilhas": {
+    "children": [
+      "slider-layout#banner",
+      "search-result-layout.customQuery#maravilhas"
+    ],
+    "props": {
+      "tabId": "maravilhas"
+    }
+  },
+  "tab-content.item#guerreiros": {
+    "children": [
+      "slider-layout#banner",
+      "search-result-layout.customQuery#guerreiros"
+    ],
+    "props": {
+      "tabId": "guerreiros"
+    }
+  },
+  "tab-content.item#album1": {
+    "children": [
+      "slider-layout#banner",
+      "search-result-layout.customQuery#album1"
+    ],
+    "props": {
+      "tabId": "album1"
+    }
+  },
+  "tab-content.item#album2": {
+    "children": [
+      "slider-layout#banner",
+      "search-result-layout.customQuery#album2"
+    ],
+    "props": {
+      "tabId": "album2"
+    }
+  },
+  "tab-content.item#album3": {
+    "children": [
+      "slider-layout#banner",
+      "search-result-layout.customQuery#album3"
+    ],
+    "props": {
+      "tabId": "album3"
+    }
+  },
+
+
+//Responsavel por Realizar a Busca dos Produtos a Serem Exibidos
+"search-result-layout.customQuery#promocao": {
+  "props": {
+      "querySchema": {
+          "orderByField": "OrderByBestDiscountDESC",
+          "hideUnavailableItems": true,
+          "maxItemsPerPage": 8,
+          "queryField": "UpMedal",
+          "mapField": "ft",
+          "skusFilter": "ALL_AVAILABLE"
+      }
+  },
+  "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+  ]
+},
+"search-result-layout.customQuery#corinthians": {
+  "props": {
+      "querySchema": {
+          "orderByField": "OrderByBestDiscountDESC",
+          "hideUnavailableItems": true,
+          "maxItemsPerPage": 8,
+          "queryField": "Corinthians",
+          "mapField": "ft",
+          "skusFilter": "ALL_AVAILABLE"
+      }
+  },
+  "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+  ]
+},
+"search-result-layout.customQuery#palmeiras": {
+  "props": {
+      "querySchema": {
+          "orderByField": "OrderByBestDiscountDESC",
+          "hideUnavailableItems": true,
+          "maxItemsPerPage": 8,
+          "queryField": "palmeiras",
+          "mapField": "ft",
+          "skusFilter": "ALL_AVAILABLE"
+      }
+  },
+  "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+  ]
+},
+"search-result-layout.customQuery#signos": {
+  "props": {
+      "querySchema": {
+          "orderByField": "OrderByBestDiscountDESC",
+          "hideUnavailableItems": true,
+          "maxItemsPerPage": 8,
+          "queryField": "signos",
+          "mapField": "ft",
+          "skusFilter": "ALL_AVAILABLE"
+      }
+  },
+  "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+  ]
+},
+"search-result-layout.customQuery#divertidos": {
+  "props": {
+      "querySchema": {
+          "orderByField": "OrderByBestDiscountDESC",
+          "hideUnavailableItems": true,
+          "maxItemsPerPage": 8,
+          "queryField": "medalhas",
+          "mapField": "category-2",
+          "skusFilter": "ALL_AVAILABLE"
+      }
+  },
+  "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+  ]
+},
+"search-result-layout.customQuery#maravilhas": {
+  "props": {
+      "querySchema": {
+          "orderByField": "OrderByBestDiscountDESC",
+          "hideUnavailableItems": true,
+          "maxItemsPerPage": 8,
+          "queryField": "bones",
+          "mapField": "ft",
+          "skusFilter": "ALL_AVAILABLE"
+      }
+  },
+  "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+  ]
+},
+"search-result-layout.customQuery#guerreiros": {
+  "props": {
+      "querySchema": {
+          "orderByField": "OrderByBestDiscountDESC",
+          "hideUnavailableItems": true,
+          "maxItemsPerPage": 8,
+          "queryField": "guerreiros",
+          "mapField": "ft",
+          "skusFilter": "ALL_AVAILABLE"
+      }
+  },
+  "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+  ]
+},
+"search-result-layout.customQuery#album1": {
+  "props": {
+      "querySchema": {
+          "orderByField": "OrderByBestDiscountDESC",
+          "hideUnavailableItems": true,
+          "maxItemsPerPage": 8,
+          "queryField": "oculos",
+          "mapField": "ft",
+          "skusFilter": "ALL_AVAILABLE"
+      }
+  },
+  "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+  ]
+},
+"search-result-layout.customQuery#album2": {
+  "props": {
+      "querySchema": {
+          "orderByField": "OrderByBestDiscountDESC",
+          "hideUnavailableItems": true,
+          "maxItemsPerPage": 8,
+          "queryField": "desafios",
+          "mapField": "ft",
+          "skusFilter": "ALL_AVAILABLE"
+      }
+  },
+  "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+  ]
+},
+"search-result-layout.customQuery#album3": {
+  "props": {
+      "querySchema": {
+          "orderByField": "OrderByBestDiscountDESC",
+          "hideUnavailableItems": true,
+          "maxItemsPerPage": 8,
+          "queryField": "bones",
+          "mapField": "ft",
+          "skusFilter": "ALL_AVAILABLE"
+      }
+  },
+  "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+  ]
+},
+
+
+  //Slider com os 2 Banners Principais do Site
   "slider-layout#banner": {
     "props": {
       "itemsPerPage": {
@@ -23,22 +412,17 @@
   "image#banner1": {
     "props": {
       "src": "https://github.com/thiagoteberga/upmedal-hiring-coders/blob/master/assets/img/banner.png?raw=true",
+      "width": "100%",
       "maxWidth": "100%"
     }
   },
   "image#banner2": {
     "props": {
       "src": "https://github.com/thiagoteberga/upmedal-hiring-coders/blob/master/assets/img/banner-2.png?raw=true",
+      "width": "100%",
       "maxWidth": "100%"
     }
-  },
-
-  "rich-text": { 
-    "props": { 
-      "text": "UpMedal Works!",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
-    }
   }
+
+  
 }
