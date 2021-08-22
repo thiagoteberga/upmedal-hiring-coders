@@ -28,7 +28,7 @@ Criar a solução a partir de um [boiler template padrão da Vtex IO](https://gi
 
 # Links Úteis:
 ## Meu Workspace:
-https://thiagoteberga--hiringcoders2021.myvtex.com/
+https://upmedalthiagoteberga--hiringcoders2021.myvtex.com
 
 ## Exemplo de Manifest:
 https://github.com/vtex-apps/store-theme/blob/master/manifest.json
