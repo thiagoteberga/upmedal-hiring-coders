@@ -1,12 +1,41 @@
 {
   "store.home": { 
     "blocks": [
+      "slider-layout#banner",
       "rich-text"
     ]
   },
+
+  "slider-layout#banner": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    },
+    "children": ["image#banner1", "image#banner2"]
+  },
+
+  "image#banner1": {
+    "props": {
+      "src": "https://github.com/thiagoteberga/upmedal-hiring-coders/blob/master/assets/img/banner.png?raw=true",
+      "maxWidth": "100%"
+    }
+  },
+  "image#banner2": {
+    "props": {
+      "src": "https://github.com/thiagoteberga/upmedal-hiring-coders/blob/master/assets/img/banner-2.png?raw=true",
+      "maxWidth": "100%"
+    }
+  },
+
   "rich-text": { 
     "props": { 
-      "text": "VTEX Store Framework",
+      "text": "UpMedal Works!",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "font": "t-heading-1"
