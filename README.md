@@ -27,6 +27,9 @@ Criar a solução a partir de um [boiler template padrão da Vtex IO](https://gi
 
 
 # Links Úteis:
+## Projeto do Store Block do WhatsApp:
+https://github.com/thiagoteberga/upmedal-hiring-coders-custom
+
 ## Meu Workspace:
 https://upmedalthiagoteberga--hiringcoders2021.myvtex.com
 
