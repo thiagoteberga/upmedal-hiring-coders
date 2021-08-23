@@ -6,13 +6,26 @@
     position: absolute;
 }
 
-.sliderLayoutContainer.sliderLayoutContainer--carousel{
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-bottom: 30px;
-    padding-top: 80px;
-    align-items: bottom;
-    background-color: transparent;
+@media only screen and (max-width: 3000px) {
+    .sliderLayoutContainer.sliderLayoutContainer--carousel{
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-bottom: 30px;
+        padding-top: 120px;
+        align-items: bottom;
+        background-color: transparent;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .sliderLayoutContainer.sliderLayoutContainer--carousel{
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-bottom: 30px;
+        padding-top: 300px;
+        align-items: bottom;
+        background-color: transparent;
+    }
 }
 
 .paginationDot.paginationDot--carousel.paginationDot--isActive.paginationDot--carousel--isActive{

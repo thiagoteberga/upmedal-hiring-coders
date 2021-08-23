@@ -1,0 +1,15 @@
+.container{
+    background-color: #424242;
+    text-align: center;
+}
+
+.imageContainer{
+    background-color: #424242;
+    text-align: center;
+}
+
+.buyButton :global(.vtex-button) {
+    background-color: #59ff00;
+    border-color: #59ff00;
+    color: #424242;
+}

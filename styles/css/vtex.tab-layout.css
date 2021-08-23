@@ -1,9 +1,22 @@
-.listContainer{
-    position: fixed;
-    background-color: #303030;
-    z-index:1;
-    top: 64px;
-    left: 0;
+
+@media only screen and (max-width: 3000px) {
+    .listContainer{
+        position: fixed;
+        background-color: #303030;
+        z-index:1;
+        top: 64px;
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .listContainer{
+        position: fixed;
+        background-color: #303030;
+        z-index:1;
+        top: 84px;
+        left: 0;
+    }
 }
 
 .listItem :global(.vtex-button) {

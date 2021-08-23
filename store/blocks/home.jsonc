@@ -1,12 +1,24 @@
 {
   "store.home": { 
     "blocks": [
-      "flex-layout.row#menu",
-      "whatsapp"
+      "responsive-layout.desktop",
+      "responsive-layout.mobile"
     ]
   },
 
 
+  "responsive-layout.desktop": {
+    "children": [
+      "flex-layout.row#menu",
+      "whatsapp"
+    ]
+  },
+  "responsive-layout.mobile": {
+    "children": [
+      "flex-layout.row#menu",
+      "whatsapp"
+    ]
+  },
 
   //Linha do Menu - Fixada no CSS "vtex.tab-layout.css" - Responsavel pelas Abas
   "flex-layout.row#menu": {
@@ -240,6 +252,35 @@
       "search-not-found-layout"
   ]
 },
+
+"search-result-layout.desktop": {
+  "children": [
+    "flex-layout.row#result"
+  ],
+  "props": {
+    "preventRouteChange": true
+  }
+},
+"search-result-layout.mobile": {
+  "children": [
+    "flex-layout.row#result"
+  ],
+  "props": {
+    "preventRouteChange": true
+  }
+},
+"flex-layout.row#result": {
+  "children": [
+    "search-content"
+  ]
+},
+"search-content": {
+  "blocks": [
+    "gallery","not-found"
+  ]
+},
+
+
 "search-result-layout.customQuery#corinthians": {
   "props": {
       "querySchema": {
