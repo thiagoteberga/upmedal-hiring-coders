@@ -2,3 +2,9 @@
 .container {
     background-color: #303030;
 }
+
+.stretchChildrenWidth{
+    text-align: center;
+    color: #fff;
+    width: 50%;
+}

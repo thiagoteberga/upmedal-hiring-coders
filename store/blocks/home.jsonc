@@ -1,7 +1,8 @@
 {
   "store.home": { 
     "blocks": [
-      "flex-layout.row#menu"
+      "flex-layout.row#menu",
+      "whatsapp"
     ]
   },
 

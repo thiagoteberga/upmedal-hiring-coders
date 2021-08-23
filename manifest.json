@@ -50,7 +50,8 @@
     "vtex.product-price": "1.x",
     "vtex.condition-layout": "1.x",
     "vtex.product-list": "0.x",
-    "vtex.store-image": "0.x"
+    "vtex.store-image": "0.x",
+    "vtex.countdown": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
